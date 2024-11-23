@@ -1,0 +1,7 @@
+<div *ngIf="elementos && elementos.length > 0">
+    <ul>
+      <li *ngFor="let elemento of elementos">{{ elemento.nombre }}</li> <!-- Ajusta el campo según tus datos -->
+    </ul>
+  </div>
+  <p *ngIf="!elementos || elementos.length === 0">No hay elementos disponibles.</p>
+  
